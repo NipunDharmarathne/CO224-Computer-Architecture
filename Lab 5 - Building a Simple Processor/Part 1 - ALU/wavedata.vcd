@@ -1,0 +1,143 @@
+$date
+	Thu Mar 16 16:43:15 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module alu_tb $end
+$scope module myalu $end
+$var wire 8 ! DATA1 [7:0] $end
+$var wire 8 " DATA2 [7:0] $end
+$var wire 8 # RESULT_FOR_ADD [7:0] $end
+$var wire 8 $ RESULT_FOR_AND [7:0] $end
+$var wire 8 % RESULT_FOR_FORWARD [7:0] $end
+$var wire 8 & RESULT_FOR_OR [7:0] $end
+$var wire 3 ' SELECT [2:0] $end
+$var reg 8 ( RESULT [7:0] $end
+$scope module forward_1 $end
+$var wire 8 ) DATA2 [7:0] $end
+$var wire 8 * RESULT [7:0] $end
+$upscope $end
+$scope module add_1 $end
+$var wire 8 + DATA1 [7:0] $end
+$var wire 8 , DATA2 [7:0] $end
+$var wire 8 - RESULT [7:0] $end
+$upscope $end
+$scope module and_1 $end
+$var wire 8 . DATA1 [7:0] $end
+$var wire 8 / DATA2 [7:0] $end
+$var wire 8 0 RESULT [7:0] $end
+$upscope $end
+$scope module or_1 $end
+$var wire 8 1 DATA1 [7:0] $end
+$var wire 8 2 DATA2 [7:0] $end
+$var wire 8 3 RESULT [7:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bz 3
+b111011 2
+b111 1
+bz 0
+b111011 /
+b111 .
+bx -
+b111011 ,
+b111 +
+bx *
+b111011 )
+bx (
+b0 '
+bz &
+bx %
+bz $
+bx #
+b111011 "
+b111 !
+$end
+#1
+b111111 &
+b111111 3
+b11 $
+b11 0
+b111011 %
+b111011 *
+b111011 (
+#2
+b1000010 #
+b1000010 -
+#5
+b1000010 (
+b11 "
+b11 )
+b11 ,
+b11 /
+b11 2
+b1 !
+b1 +
+b1 .
+b1 1
+b1 '
+#6
+b1 $
+b1 0
+b11 &
+b11 3
+b11 %
+b11 *
+#7
+b100 #
+b100 -
+b100 (
+#10
+b1 (
+b1110011 "
+b1110011 )
+b1110011 ,
+b1110011 /
+b1110011 2
+b1010001 !
+b1010001 +
+b1010001 .
+b1010001 1
+b10 '
+#11
+b1010001 $
+b1010001 0
+b1010001 (
+b1110011 &
+b1110011 3
+b1110011 %
+b1110011 *
+#12
+b11000100 #
+b11000100 -
+#15
+b1110011 (
+b110011 "
+b110011 )
+b110011 ,
+b110011 /
+b110011 2
+b1100101 !
+b1100101 +
+b1100101 .
+b1100101 1
+b11 '
+#16
+b100001 $
+b100001 0
+b1110111 &
+b1110111 3
+b1110111 (
+b110011 %
+b110011 *
+#17
+b10011000 #
+b10011000 -
